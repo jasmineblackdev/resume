@@ -1,4 +1,6 @@
-/* Base styles */
+/* -------------------------------------------- */
+/* BASE RESET + GLOBAL STYLES */
+/* -------------------------------------------- */
 
 *,
 *::before,
@@ -9,15 +11,30 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #f3f4f6;
+  background-color: #f3f4f6; /* light gray */
   color: #111827;
   line-height: 1.6;
 }
 
-/* Profile section */
+/* -------------------------------------------- */
+/* UNIVERSAL SECTION BOX */
+/* -------------------------------------------- */
+
+.section-box {
+  max-width: 900px;
+  margin: 2rem auto;                 /* centers each section */
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* -------------------------------------------- */
+/* PROFILE SECTION */
+/* -------------------------------------------- */
 
 .profile-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 2.5rem auto 2rem;
   padding: 2rem 2.5rem;
   background: #ffffff;
@@ -29,10 +46,6 @@ body {
   width: 100%;
 }
 
-.profile-photo-cell {
-  vertical-align: top;
-}
-
 .profile-photo {
   width: 220px;
   height: auto;
@@ -41,13 +54,10 @@ body {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
 }
 
-.profile-text-cell {
-  vertical-align: top;
-}
-
 .name {
   font-size: 1.9rem;
-  margin-bottom: 0.35rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
 }
 
 .headline {
@@ -57,13 +67,12 @@ body {
 }
 
 .summary {
-  margin-top: 0;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
   color: #374151;
 }
 
 .links {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: #4b5563;
 }
 
@@ -76,169 +85,153 @@ body {
   text-decoration: underline;
 }
 
-/* Download button */
+/* -------------------------------------------- */
+/* DOWNLOAD BUTTON */
+/* -------------------------------------------- */
 
 .download-btn {
   display: inline-block;
-  margin-top: 0.8rem;
-  padding: 0.55rem 1.3rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 999px;
   background: linear-gradient(135deg, #2563eb, #4f46e5);
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 500;
+  color: white;
+  font-size: 0.92rem;
+  font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.5);
-  border: none;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+  transition: 0.2s ease;
 }
 
 .download-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.65);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 36px rgba(37, 99, 235, 0.58);
 }
 
-/* Sections shared */
+/* -------------------------------------------- */
+/* EDUCATION SECTION */
+/* -------------------------------------------- */
 
-.section {
-  max-width: 1000px;
-  margin: 0 auto 2rem;
-  padding: 1.8rem 2.5rem;
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+.education-container {
+  composes: section-box;
 }
-
-.section h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #111827;
-}
-
-/* Education */
 
 .education-container table {
   width: 100%;
 }
 
-.section-title-cell {
-  width: 22%;
-  vertical-align: top;
+.education-container h3 {
+  text-align: left;
 }
 
-.section-content-cell {
-  vertical-align: top;
-  font-size: 0.95rem;
-  color: #374151;
+/* -------------------------------------------- */
+/* WORK EXPERIENCE */
+/* -------------------------------------------- */
+
+.work-container {
+  composes: section-box;
 }
 
-/* Work */
+.work-container h3 {
+  margin-bottom: 1rem;
+}
 
 .work-container p {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 .work-container ul {
-  margin-top: 0;
-  margin-bottom: 0.8rem;
-  padding-left: 1.2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.3rem;
 }
 
 .work-container li {
   margin-bottom: 0.25rem;
-  font-size: 0.92rem;
   color: #4b5563;
 }
 
-/* Skills */
+/* -------------------------------------------- */
+/* SKILLS SECTION */
+/* -------------------------------------------- */
+
+.skills-container {
+  composes: section-box;
+}
 
 .skills-container table {
   margin: 0 auto;
 }
 
 .skills-container td {
-  padding: 0.25rem 0.6rem;
-  font-size: 0.9rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.92rem;
 }
 
 .star {
   color: #fbbf24;
-  font-size: 0.9rem;
   white-space: nowrap;
 }
 
 .off-star {
-  color: #e5e7eb;
+  color: #d1d5db;
 }
 
 .center-link {
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .center-link a {
-  color: #2563eb;
   text-decoration: none;
-  font-weight: 500;
+  color: #2563eb;
+  font-weight: 600;
 }
 
-.center-link a:hover {
-  text-decoration: underline;
-}
-
-/* Horizontal rules */
+/* -------------------------------------------- */
+/* HR LINE */
+/* -------------------------------------------- */
 
 hr {
   border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 1.5rem auto;
-  max-width: 1000px;
+  border-top: 1px solid #d1d5db;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
-/* Responsive */
+/* -------------------------------------------- */
+/* RESPONSIVE */
+/* -------------------------------------------- */
 
 @media (max-width: 800px) {
   .profile-container,
-  .section {
+  .section-box,
+  .education-container,
+  .work-container,
+  .skills-container {
     margin: 1.25rem 1rem;
     padding: 1.4rem 1.3rem;
   }
 
-  .profile-container table,
-  .education-container table {
+  .profile-container table {
     display: block;
-  }
-
-  .profile-photo-cell,
-  .profile-text-cell,
-  .section-title-cell,
-  .section-content-cell {
-    display: block;
-    width: 100%;
   }
 
   .profile-photo {
-    margin: 0 auto 1.2rem;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 1rem;
     display: block;
   }
 
-  .section-title-cell {
-    margin-bottom: 0.5rem;
+  .name {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 480px) {
-  .name {
-    font-size: 1.6rem;
-  }
-
   .download-btn {
     width: 100%;
     text-align: center;
-  }
-
-  .skills-container table {
-    font-size: 0.85rem;
   }
 }
