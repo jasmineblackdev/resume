@@ -34,3 +34,31 @@ I’m transitioning into **Front-End Development** and **Mobile Development**, f
 ---
 
 ## 📦 Repository Contents
+resume/
+│── index.html               –> Live web version of resume
+│── style_sheet.css          –> Custom CSS for resume layout
+│── jasmine-headshot.jpg     –> Professional headshot
+└── README.md                –> Repo documentation
+
+---
+
+## 🎯 Purpose of This Repository
+This repo serves as a **central, accessible location** for:
+- Providing recruiters with a live resume link  
+- Hosting an updated resume PDF  
+- Demonstrating my ability to build clean front-end interfaces  
+- Maintaining a version-controlled record of resume updates  
+
+---
+
+## 📬 Contact
+Feel free to reach out regarding job opportunities, collaborations, or project work.
+
+**Portfolio:** https://jasmineblackdev.github.io/portfolio-site  
+**GitHub:** https://github.com/jasmineblackdev  
+**UX/UI Case Studies:** https://uxfol.io/p/JasmineBlack/03a4cce6  
+**Email:** jasmineblackdev@gmail.com
+
+---
+
+### ⭐ Thank you for visiting my resume repository!
