@@ -7,7 +7,7 @@ This repo contains the most up-to-date version of my **Software Engineering / Fr
 
 ## 🔗 Live Resume Website
 View my live resume webpage here:  
-👉 **https://jasmineblackdev.github.io/jasmineblackdev-resume/**
+👉 ** https://jasmineblackdev.github.io/resume/
 
 This page includes:
 - My updated professional experience  
